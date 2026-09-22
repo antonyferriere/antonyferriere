@@ -13,7 +13,7 @@ export function renderHero() {
         <p class="hero-promise">Je transforme des besoins complexes en solutions numériques <strong>utiles, utilisables et réellement utilisées.</strong></p>
         <div class="hero-actions"><a class="button button-primary" href="#approche">Découvrir mon approche ${icon('down')}</a><a class="text-link cv-link" href="${profile.cv}" download>Télécharger mon CV ${icon('download')}</a></div>
       </div>
-      <div class="hero-process" aria-label="Analyser, concevoir, concrétiser">
+      <div class="hero-process" role="group" aria-label="Analyser, concevoir, concrétiser">
         <p><span>01</span> Analyser</p><p><span>02</span> Concevoir</p><p><span>03</span> Concrétiser</p>
       </div>
       <div class="hero-foot"><ul class="hero-proof"><li><strong>20+</strong><span>ans dans le numérique</span></li><li>Pilotage de bout en bout</li><li>UX / Produit</li><li>Innovation &amp; IA</li></ul><a class="scroll-link" href="#approche" aria-label="Découvrir la suite">${icon('down')}</a></div>
