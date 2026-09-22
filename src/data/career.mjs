@@ -1,0 +1,12 @@
+export const career = [
+  { year: '2002', end: '2005', verb: 'Développer', role: 'Développeur web junior', company: 'Cabinet Zulian', text: 'Construire les bases : le code, la logique et le goût du travail bien fait.' },
+  { year: '2005', end: '2007', verb: 'Communiquer', role: 'Chargé de communication interne', company: 'Région Rhône-Alpes', text: 'Comprendre les publics et rendre une information accessible.' },
+  { year: '2007', end: '2008', verb: 'Comprendre les systèmes métiers', role: 'Consultant BI & maintenance applicative', company: 'Aéroports de Lyon · Sanofi-Aventis', text: 'Relier données, outils de gestion et réalité opérationnelle.' },
+  { year: '2008', end: '2009', verb: 'Produire & coordonner', role: 'Responsable de production web', company: 'Icare-net', text: 'Organiser la production et faire avancer les projets avec les clients.' },
+  { year: '2009', end: '2011', verb: 'Concevoir', role: 'Consultant web senior', company: 'La Halle! · Rflex', text: 'Concevoir des interfaces, des solutions e-commerce et des applications métiers.' },
+  { year: '2011', end: '2014', verb: 'Relier métier & technique', role: 'Chargé de projets IT · MOA / MOE', company: 'Vinci Autoroutes / ESCOTA', text: 'Traduire le besoin métier et accompagner des applications de gestion.' },
+  { year: '2014', end: '2016', verb: 'Développer à l’échelle produit', role: 'Développeur senior', company: 'Key4events', text: 'Concevoir et faire évoluer des plateformes web métiers.', featured: true },
+  { year: '2016', end: '2021', verb: 'Piloter', role: 'Chef de projet IT', company: 'Key4events', text: 'Prendre en charge les projets, du cadrage à la mise en production.', featured: true },
+  { year: '2021', end: '2025', verb: 'Faire évoluer', role: 'Responsable de l’innovation logicielle', company: 'Key4events', text: 'Relier roadmap produit, UX et modernisation technologique.', featured: true },
+  { year: '2025', end: 'Aujourd’hui', verb: 'Explorer de nouveaux usages', role: 'Chef de projet numérique & IA générative', company: 'Freelance', text: 'Accompagner les professionnels et intégrer l’IA dans des projets concrets.' },
+];
