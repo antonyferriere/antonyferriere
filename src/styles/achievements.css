@@ -1,0 +1,241 @@
+.achievements-section {
+  background: var(--color-background-alt);
+}
+
+.achievement-featured {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 5rem;
+  border-block: 1px solid var(--color-border);
+  padding-block: 3rem;
+}
+
+.achievement-numbers {
+  padding: 0.5rem 0 1rem;
+}
+
+.achievement-numbers .eyebrow {
+  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+}
+
+.large-number {
+  font: 400 clamp(4rem, 6.5vw, 6.5rem) / 1.1 var(--font-heading);
+  letter-spacing: -0.065em;
+  color: var(--color-primary);
+  margin-top: 2rem;
+}
+
+.large-number span {
+  font: 400 1rem/1.5 var(--font-body);
+  display: block;
+  color: var(--color-text-muted);
+  letter-spacing: normal;
+  margin-top: 0.6rem;
+}
+
+.secondary-number {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.secondary-number strong {
+  font: 500 2.5rem/1.2 var(--font-heading);
+  letter-spacing: -0.04em;
+}
+
+.secondary-number p {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.case-meta {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.case-meta > span {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+
+.achievement h3 {
+  font-size: clamp(1.5rem, 2.3vw, 2.1rem);
+  max-width: 400px;
+}
+
+.case-description {
+  margin-top: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.8rem;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.tags li {
+  font-size: 0.75rem;
+  color: var(--color-primary);
+  padding: 0.15rem 0.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+}
+
+.case-details {
+  margin-top: 1.5rem;
+}
+
+.case-details summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding-block: 1rem;
+  border-top: 1px solid var(--color-border);
+  list-style: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.case-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.case-details summary .icon {
+  margin-left: auto;
+  transition: transform var(--duration-fast);
+}
+
+.case-details[open] summary .icon {
+  transform: rotate(45deg);
+}
+
+.case-details summary:hover {
+  color: var(--color-link);
+}
+
+.details-close {
+  display: none;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+}
+
+.case-details[open] .details-close {
+  display: inline;
+}
+
+.case-details dl {
+  margin: 0.5rem 0 0;
+}
+
+.case-details dl > div {
+  margin-bottom: 1.2rem;
+}
+
+.case-details dt {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 0.3rem;
+  color: var(--color-primary);
+}
+
+.case-details dd {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 3rem;
+  align-items: start;
+}
+
+.achievement-grid .achievement {
+  padding-top: 0.5rem;
+}
+
+.achievement-grid h3 {
+  min-height: 2.4em;
+}
+
+.achievement-grid .case-description {
+  min-height: 5.3em;
+}
+
+@media (max-width: 1100px) {
+  .achievement-featured {
+    gap: 3rem;
+  }
+  .achievement-grid {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .achievement-featured {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .achievement-numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+  .achievement-numbers .eyebrow {
+    grid-column: 1/-1;
+  }
+  .large-number {
+    font-size: 4rem;
+  }
+  .secondary-number {
+    align-self: center;
+  }
+  .achievement-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .achievement-grid .achievement {
+    border-top: 1px solid var(--color-border);
+    padding-top: 2rem;
+  }
+  .achievement-grid h3,
+  .achievement-grid .case-description {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .large-number {
+    font-size: 3.5rem;
+  }
+  .achievement-numbers {
+    grid-template-columns: 1fr;
+  }
+  .secondary-number {
+    margin-top: 1.5rem;
+  }
+  .achievement h3 {
+    font-size: 1.8rem;
+  }
+  .case-details dd {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,255 @@
+.about-section {
+  padding-top: 2rem;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(3rem, 8vw, 8rem);
+  align-items: center;
+}
+
+.portrait {
+  margin: 0;
+}
+
+.portrait img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: var(--radius-small);
+  filter: var(--portrait-filter);
+}
+
+.portrait figcaption {
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--color-primary);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.about-copy .section-heading {
+  margin-bottom: 2rem;
+}
+
+.about-copy > p {
+  margin-bottom: 1.3rem;
+  color: var(--color-text-muted);
+}
+
+.about-copy .about-lead {
+  font: 500 1.5rem/1.5 var(--font-heading);
+  letter-spacing: -0.025em;
+  color: var(--color-text);
+}
+
+.values-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.2rem;
+  padding: 0;
+  margin: 2rem 0;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--color-primary);
+}
+
+.outside-work {
+  font-size: 0.95rem;
+}
+
+.education {
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.education p {
+  font-size: 0.875rem;
+  padding-block: 0.5rem;
+}
+
+.education strong {
+  margin-right: 0.8rem;
+  color: var(--color-primary);
+}
+
+.education span {
+  color: var(--color-text-muted);
+  display: block;
+  margin-left: 3.3rem;
+  font-size: 0.75rem;
+}
+
+.contact-section {
+  background: var(--color-contact);
+  color: var(--color-contact-text);
+  padding-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-section .eyebrow,
+.contact-section .eyebrow > span {
+  color: var(--color-contact-muted);
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 5rem;
+  margin-top: 2.5rem;
+}
+
+.contact-section h2 {
+  font-size: clamp(3.2rem, 6vw, 5.5rem);
+  font-weight: 400;
+  line-height: 1.08;
+}
+
+.contact-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(0.5rem, 3vw, 3rem);
+  max-width: 100%;
+  text-decoration: none;
+  font: 400 1.75rem var(--font-heading);
+  margin-top: 2.8rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-contact-muted);
+}
+
+.contact-cta > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.contact-cta .icon {
+  width: 2rem;
+  height: 2rem;
+  transition: transform var(--duration-fast);
+}
+
+.contact-cta:hover .icon {
+  transform: translate(3px, -3px);
+}
+
+.contact-copy {
+  color: var(--color-contact-muted);
+  padding-top: 0.5rem;
+}
+
+.contact-copy p + p {
+  margin-top: 1.5rem;
+}
+
+.contact-roles {
+  font-weight: 500;
+  color: var(--color-contact-text);
+}
+
+.contact-links {
+  border-top: 1px solid var(--color-contact-muted);
+  margin-top: 4rem;
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  min-height: 44px;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-links .phone-link {
+  margin-left: auto;
+  color: var(--color-contact-muted);
+}
+
+.contact-section :focus-visible {
+  outline-color: var(--color-contact-text);
+}
+
+.footer {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 2rem;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.footer a {
+  text-decoration: none;
+  padding-block: 0.5rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+  .contact-links {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .contact-links .phone-link {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-layout {
+    gap: 2.5rem;
+  }
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-layout {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .portrait {
+    width: 100%;
+    max-width: 420px;
+  }
+  .contact-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 7rem), 1fr));
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  .contact-links a:first-child {
+    grid-column: 1/-1;
+    font-size: 0.95rem;
+    overflow-wrap: anywhere;
+  }
+  .contact-links .phone-link {
+    grid-column: 1/-1;
+  }
+  .footer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 0.7rem;
+  }
+  .footer p:nth-child(2) {
+    order: 3;
+    flex-basis: 100%;
+  }
+}
