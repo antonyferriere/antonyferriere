@@ -1,0 +1,77 @@
+:root {
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Manrope', system-ui, sans-serif;
+  --radius-small: .375rem;
+  --radius-medium: 1rem;
+  --space-xs: .5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+  --space-section: clamp(5rem, 9vw, 8rem);
+  --duration-fast: 180ms;
+  --duration-medium: 420ms;
+  --easing-standard: cubic-bezier(.2,.7,.25,1);
+  --header-height: 6rem;
+  --content-width: 1320px;
+}
+
+:root, [data-theme='garden'] {
+  color-scheme: light;
+  --color-background: #f3f0e8;
+  --color-background-alt: #e9ede6;
+  --color-surface: #faf8f1;
+  --color-text: #263242;
+  --color-text-muted: #526459;
+  --color-primary: #355c4a;
+  --color-secondary: #8faf9a;
+  --color-accent: #1f89af;
+  --color-link: #12617c;
+  --color-on-primary: #faf8f1;
+  --color-border: #c7d0c6;
+  --color-strong-border: #82978b;
+  --color-glow: #bee7fb;
+  --color-warm: #d6c7a5;
+  --color-header: #f3f0e8f5;
+  --color-glass: #f3f0e8e8;
+  --color-contact: #234637;
+  --color-contact-text: #f3f0e8;
+  --color-contact-muted: #cbdcd0;
+  --shadow-soft: 0 18px 60px #2632420d;
+  --hero-image: url('/images/jardin-augmente.webp');
+  --hero-image-small: url('/images/jardin-augmente-small.webp');
+  --hero-veil: linear-gradient(90deg, #f3f0e8ed 0%, #f3f0e8b8 36%, #f3f0e830 62%, transparent 85%);
+  --hero-bottom: linear-gradient(0deg, #f3f0e8 0%, #f3f0e850 45%, transparent);
+  --orb-background: radial-gradient(circle at 30% 25%, #f3f0e8, #8faf9a 48%, #355c4a 95%);
+  --portrait-filter: none;
+}
+
+[data-theme='lumen'] {
+  color-scheme: dark;
+  --color-background: #081a36;
+  --color-background-alt: #0d2341;
+  --color-surface: #11294a;
+  --color-text: #e8e3ec;
+  --color-text-muted: #b1c4d2;
+  --color-primary: #bee7fb;
+  --color-secondary: #8faf9a;
+  --color-accent: #1f89af;
+  --color-link: #a9ddec;
+  --color-on-primary: #081a36;
+  --color-border: #31465f;
+  --color-strong-border: #7596aa;
+  --color-glow: #1952ba;
+  --color-warm: #d6c7a5;
+  --color-header: #081a36f5;
+  --color-glass: #081a36dc;
+  --color-contact: #112f61;
+  --color-contact-text: #e8e3ec;
+  --color-contact-muted: #b1c8dc;
+  --shadow-soft: 0 18px 60px #020e2626;
+  --hero-image: url('/images/lumen-vivant.webp');
+  --hero-image-small: url('/images/lumen-vivant-small.webp');
+  --hero-veil: linear-gradient(90deg, #081a36ee 0%, #081a36c2 35%, #081a3630 65%, transparent 90%);
+  --hero-bottom: linear-gradient(0deg, #081a36 0%, #081a3640 55%, transparent);
+  --orb-background: radial-gradient(circle at 68% 30%, #bee7fb, #1f89af 17%, #08246c 55%, #081a36);
+  --portrait-filter: saturate(.85);
+}

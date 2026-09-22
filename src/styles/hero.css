@@ -1,0 +1,48 @@
+.hero { position: relative; isolation: isolate; min-height: 850px; min-height: max(800px, 100svh); overflow: hidden; }
+.hero-landscape { position: absolute; z-index: -3; inset: 0; background: var(--hero-image) center / cover no-repeat; }
+.hero::before { content: ''; position: absolute; inset: 0; z-index: -2; background: var(--hero-veil); }
+.hero::after { content: ''; position: absolute; inset: 55% 0 0; z-index: -1; background: var(--hero-bottom); }
+.hero-light { position: absolute; z-index: -2; right: 2%; top: 23%; width: 28vw; aspect-ratio: 1; background: radial-gradient(circle, var(--color-glow), transparent 68%); opacity: .13; animation: light-drift 18s ease-in-out infinite alternate; }
+.hero-content { min-height: inherit; padding-top: calc(var(--header-height) + clamp(3rem, 6vh, 5rem)); display: grid; grid-template-columns: 1.3fr 1fr; grid-template-rows: 1fr auto; align-items: center; position: relative; }
+.hero-copy { max-width: 620px; padding-bottom: 3.5rem; }
+.hero-role { margin-bottom: 1.7rem; font-size: .83rem; }
+.hero h1 { font-size: clamp(4.5rem, 7.7vw, 7.3rem); letter-spacing: -.065em; line-height: .98; margin-left: -.05em; font-weight: 500; }
+.hero h1 span { color: var(--color-primary); }
+.hero-disciplines { font-size: 1.1rem; letter-spacing: .025em; margin-top: 2rem; }
+.hero-disciplines span { color: var(--color-primary); margin-inline: .5rem; }
+.hero-promise { margin-top: 1.3rem; max-width: 500px; font-size: clamp(1.1rem, 1.5vw, 1.32rem); line-height: 1.65; }
+.hero-promise strong { font-weight: 500; color: var(--color-primary); }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem; margin-top: 2.2rem; }
+.hero-process { justify-self: end; align-self: end; margin-bottom: 5.5rem; padding: 1rem 1.5rem; width: 250px; background: var(--color-glass); border: 1px solid var(--color-border); border-radius: var(--radius-small); }
+.hero-process p { font-family: var(--font-heading); padding-block: .75rem; font-size: 1.05rem; }
+.hero-process p + p { border-top: 1px solid var(--color-border); }
+.hero-process span { display: inline-block; margin-right: 1.3rem; font-size: .75rem; color: var(--color-text-muted); }
+.hero-foot { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding-block: 1.8rem 2rem; border-top: 1px solid var(--color-border); }
+.hero-proof { list-style: none; display: flex; align-items: center; gap: 2.8rem; padding: 0; margin: 0; font-size: .875rem; }
+.hero-proof li:first-child { display: flex; align-items: center; gap: .8rem; }
+.hero-proof strong { font: 500 2.5rem/1 var(--font-heading); letter-spacing: -.05em; color: var(--color-primary); }
+.hero-proof li + li { padding-left: 2.8rem; border-left: 1px solid var(--color-border); }
+.scroll-link { display: grid; place-items: center; width: 2.8rem; height: 2.8rem; border: 1px solid var(--color-strong-border); border-radius: 50%; }
+@keyframes light-drift { to { transform: translate3d(-5%, 8%, 0) scale(1.12); opacity: .2; } }
+@media (max-width: 1100px) { .hero-proof { gap: 1.5rem; } .hero-proof li + li { padding-left: 1.5rem; } .hero-proof li:last-child { display: none; } }
+@media (max-width: 700px) {
+  .hero { min-height: max(830px, 100svh); }
+  .hero-landscape { background-image: var(--hero-image-small); background-position: 65% center; opacity: .7; }
+  .hero-content { grid-template-columns: 1fr; padding-top: 9rem; }
+  .hero-copy { max-width: 550px; padding-bottom: 2rem; }
+  .hero h1 { font-size: clamp(4.6rem, 17vw, 6.5rem); }
+  .hero-process { justify-self: start; display: flex; gap: 1rem; width: auto; padding: 0; border: 0; background: none; margin-bottom: 3rem; }
+  .hero-process p { font: 500 .75rem var(--font-body); }
+  .hero-process p + p { border: 0; }
+  .hero-process span { display: none; }
+  .hero-process p + p::before { content: '→'; margin-right: 1rem; color: var(--color-text-muted); }
+  .hero-foot { gap: .7rem; padding-block: 1.5rem; }
+  .hero-proof { display: grid; grid-template-columns: 1fr 1fr; column-gap: 1.5rem; row-gap: .5rem; font-size: .75rem; }
+  .hero-proof li:first-child { grid-row: span 2; }
+  .hero-proof li + li { border: 0; padding: 0; }
+  .hero-proof li:last-child { display: block; }
+  .hero-proof strong { font-size: 2rem; }
+  .hero-proof li:first-child span { max-width: 75px; line-height: 1.5; }
+  .scroll-link { display: none; }
+}
+@media (max-width: 380px) { .hero-actions { gap: .5rem; } .hero-role { font-size: .72rem; } .hero-disciplines { font-size: 1rem; } }
