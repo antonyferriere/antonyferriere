@@ -30,12 +30,13 @@
   .hero-landscape { background-image: var(--hero-image-small); background-position: 65% center; opacity: .7; }
   .hero-content { grid-template-columns: 1fr; padding-top: 9rem; }
   .hero-copy { max-width: 550px; padding-bottom: 2rem; }
-  .hero h1 { font-size: clamp(4.6rem, 17vw, 6.5rem); }
-  .hero-process { justify-self: start; display: flex; gap: 1rem; width: auto; padding: 0; border: 0; background: none; margin-bottom: 3rem; }
+  .hero h1 { font-size: clamp(2rem, 13vw + .7rem, 6.5rem); }
+  .hero-process { justify-self: start; display: flex; flex-wrap: wrap; gap: .5rem; width: auto; padding: 0; border: 0; background: none; margin-bottom: 3rem; }
   .hero-process p { font: 500 .75rem var(--font-body); }
   .hero-process p + p { border: 0; }
   .hero-process span { display: none; }
-  .hero-process p + p::before { content: '→'; margin-right: 1rem; color: var(--color-text-muted); }
+  .hero-process p { white-space: nowrap; }
+  .hero-process p + p::before { content: '→'; margin-right: .5rem; color: var(--color-text-muted); }
   .hero-foot { gap: .7rem; padding-block: 1.5rem; }
   .hero-proof { display: grid; grid-template-columns: 1fr 1fr; column-gap: 1.5rem; row-gap: .5rem; font-size: .75rem; }
   .hero-proof li:first-child { grid-row: span 2; }
@@ -44,5 +45,6 @@
   .hero-proof strong { font-size: 2rem; }
   .hero-proof li:first-child span { max-width: 75px; line-height: 1.5; }
   .scroll-link { display: none; }
+  .hero-proof { grid-template-columns: repeat(auto-fit, minmax(min(100%, 7rem), 1fr)); }
 }
 @media (max-width: 380px) { .hero-actions { gap: .5rem; } .hero-role { font-size: .72rem; } .hero-disciplines { font-size: 1rem; } }

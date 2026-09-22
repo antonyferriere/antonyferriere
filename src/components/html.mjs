@@ -15,7 +15,3 @@ export function icon(name, className = '') {
   };
   return `<svg class="icon ${className}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] || paths.arrow}</svg>`;
 }
-
-export function sectionTitle(number, label, title, description = '') {
-  return `<header class="section-heading"><p class="eyebrow"><span>${number}</span> ${label}</p><h2>${title}</h2>${description ? `<p class="section-intro">${description}</p>` : ''}</header>`;
-}
