@@ -10,3 +10,5 @@ index.html
 *.log
 coverage/
 qa/
+qa.html
+qa-axe.min.js

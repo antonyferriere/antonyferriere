@@ -1,0 +1,13 @@
+{
+  "name": "Antony Ferrière — Chef de projet IT senior",
+  "short_name": "Antony Ferrière",
+  "lang": "fr",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f3f0e8",
+  "theme_color": "#355c4a",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
