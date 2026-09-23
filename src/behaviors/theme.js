@@ -23,7 +23,9 @@ export function initTheme() {
       `${names[theme]} actif. Passer à ${names[next]}`,
     );
     document.querySelector('meta[name="theme-color"]').content =
-      theme === "garden" ? "#f3f0e8" : "#081a36";
+      theme === "garden" ? "#f3f0e8" : "#000d23";
+    document.querySelector('link[rel="icon"]').href =
+      theme === "garden" ? "/favicon.svg" : "/favicon-lumen.svg";
   }
 
   async function switchTheme() {
