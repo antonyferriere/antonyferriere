@@ -97,9 +97,13 @@ Chaque section retourne du HTML. Les données variables passent par `escapeHtml`
 | Identifiant | Univers | Expression |
 | --- | --- | --- |
 | `garden` | Jardin augmenté | Ivoire, forêt, eau claire, reliefs et lumière diffuse |
-| `lumen` | Lumen vivant | Bleu profond, mer nocturne, reflets et lumière localisée |
+| `lumen` | Lumen vivant | Bleu profond `#000D23`, vert lumineux `#88E3B8`, mer cristalline et reflet de lune |
 
 Les composants partagent structure, typographie et mise en page. Les couleurs, les surfaces, les ombres et les paysages proviennent des tokens sémantiques. Le bleu des liens du thème clair est plus sombre que l’accent décoratif pour conserver un contraste suffisant.
+
+Lumen associe au vert primaire un cyan `#62D2DC`, des surfaces bleu pétrole et des textes ivoire froid. Les bordures, le contact, le halo, le sélecteur, le favicon et la couleur de l’interface du navigateur suivent cette palette.
+
+Son hero utilise **trois compositions distinctes** : paysage, tablette en portrait et mobile. Chacune possède deux exports WebP, sélectionnés par CSS selon la largeur, l’orientation et la densité de l’écran. Les dimensions, poids et prompts de génération sont consignés dans [les assets Lumen](docs/lumen-assets.md). Les voiles et la largeur du texte mobile protègent la lecture près du reflet de lune.
 
 ### Fonctionnement du ThemeSwitcher
 
@@ -122,7 +126,7 @@ Pour retrouver le suivi du système pendant un test, effacer la clé `antony-the
 - **Accroche, méthode et présentation personnelle** : la section correspondante dans `src/sections/`.
 - **Photographie et CV** : remplacer les fichiers dans `public/`, puis vérifier les chemins, dimensions, `srcset` et textes alternatifs.
 
-La photographie est celle fournie par Antony ; elle n’a pas été générée. Les deux paysages sont des illustrations d’ambiance générées pour ce site, sans représenter un lieu personnel documenté. Les images WebP disposent de versions mobiles. Le CV est le PDF fourni, sans réécriture.
+La photographie est celle fournie par Antony ; elle n’a pas été générée. Les paysages sont des illustrations d’ambiance générées pour ce site, sans représenter un lieu personnel documenté. Jardin dispose d’un export desktop et d’un export mobile ; Lumen dispose de trois compositions responsive. Le CV est le PDF fourni, sans réécriture.
 
 Ne pas ajouter de chiffre d’impact, de référence client ou d’expérience sans source. Les documents privés du bilan de carrière ne sont pas intégrés au dépôt. Voir [la provenance éditoriale](docs/content-sources.md).
 
@@ -150,7 +154,7 @@ Avant un changement de domaine, actualiser `profile.canonical`, `public/sitemap.
 | `preprod` | Validation avant production |
 | `main` | Production stable |
 
-Tout le développement initial se trouve sur `dev`, par commits fonctionnels. Les branches `main` et `preprod` conservent l’initialisation du dépôt. La promotion se fait par demandes de fusion **`dev` → `preprod` → `main`**, après vérification du build et de l’interface. Ne pas développer directement sur `main`.
+Le développement se fait sur `dev`, par commits fonctionnels, en intégrant les changements déjà présents sur la branche distante avant de commencer une itération. La promotion se fait par demandes de fusion **`dev` → `preprod` → `main`**, après vérification du build et de l’interface. Ne pas développer directement sur `main`.
 
 `node_modules`, `dist`, les pages de contrôle temporaires, les journaux et les fichiers `.env` sont ignorés. Aucun secret n’est requis par le site. Le fichier `.openai/hosting.json` contient uniquement l’identifiant du site d’aperçu et le répertoire statique, pas de jeton.
 
