@@ -8,7 +8,7 @@ export function renderContact() {
     aria-labelledby="contact-title"
   >
     <div class="container">
-      <p class="eyebrow"><span>07</span> La suite commence par un échange</p>
+      <p class="eyebrow">La suite commence par un échange</p>
       <div class="contact-layout">
         <div>
           <h2 id="contact-title">Un projet à<br />faire avancer ?</h2>

@@ -26,7 +26,7 @@ export function renderAbout() {
       </figure>
       <div class="about-copy">
         <header class="section-heading">
-          <p class="eyebrow"><span>06</span> À propos</p>
+          <p class="eyebrow">À propos</p>
           <h2 id="about-title">Derrière<br />les projets</h2>
         </header>
         <p class="about-lead">

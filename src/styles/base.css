@@ -148,10 +148,6 @@ strong {
   text-transform: uppercase;
   color: var(--color-primary);
 }
-.eyebrow > span {
-  color: var(--color-text-muted);
-  letter-spacing: 0.02em;
-}
 .button {
   display: inline-flex;
   align-items: center;

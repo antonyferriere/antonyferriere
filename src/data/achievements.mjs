@@ -1,7 +1,6 @@
 // Sources and limits of claims are recorded in docs/content-sources.md.
 export const achievements = [
   {
-    number: "01",
     category: "Complexité métier · Key4events",
     title: "Faire tenir tout un écosystème",
     description:
@@ -18,7 +17,6 @@ export const achievements = [
       "Un écosystème piloté comprenant un CRM d’environ 150 000 contacts et des parcours supportant plus de 6 M€ de chiffre d’affaires annuel. Ces chiffres décrivent le périmètre des solutions, pas un gain attribué à mon intervention.",
   },
   {
-    number: "02",
     category: "Expérience utilisateur · Key4events",
     title: "Rendre le parcours évident",
     description:
@@ -35,7 +33,6 @@ export const achievements = [
       "Refonte du tunnel de vente et améliorations UX/UI intégrées aux plateformes. L’objectif est la simplicité et l’adoption ; aucun taux de conversion mesuré n’est communiqué.",
   },
   {
-    number: "03",
     category: "Modernisation · Key4events",
     title: "Faire évoluer sans fragiliser",
     description:
@@ -52,7 +49,6 @@ export const achievements = [
       "Modernisation progressive des applications et intégration de nouvelles technologies. La maintenabilité, la performance et la simplicité guident les arbitrages.",
   },
   {
-    number: "04",
     category: "Usages de l’IA · Freelance depuis 2025",
     title: "Une IA qui aide à travailler",
     description:

@@ -15,7 +15,7 @@ export function renderMethod() {
   >
     <div class="container">
       <header class="section-heading">
-        <p class="eyebrow"><span>05</span> Méthode</p>
+        <p class="eyebrow">Méthode</p>
         <h2 id="method-title">Ma façon d’aborder<br />un projet</h2>
         <p class="section-intro">
           Avancer avec une direction claire, des étapes concrètes et la place
@@ -26,7 +26,7 @@ export function renderMethod() {
         ${steps
           .map(
             ([name, detail], i) =>
-              `<li data-reveal><span class="step-number">0${i + 1}</span><h3>${name}</h3><p>${detail}</p></li>`,
+              `<li data-reveal><h3>${name}</h3><p>${detail}</p></li>`,
           )
           .join("")}
       </ol>

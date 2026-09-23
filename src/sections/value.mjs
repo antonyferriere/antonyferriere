@@ -7,7 +7,7 @@ export function renderValue() {
     <div class="container">
       <div class="value-intro">
         <header class="section-heading">
-          <p class="eyebrow"><span>01</span> Ma valeur ajoutée</p>
+          <p class="eyebrow">Ma valeur ajoutée</p>
           <h2 id="value-title">
             Je fais<br /><span class="accent">le lien</span>
           </h2>
@@ -25,7 +25,6 @@ export function renderValue() {
       </div>
       <div class="value-columns">
         <article data-reveal>
-          <span class="column-index">01 /</span>
           <h3>Comprendre</h3>
           <p>Ce dont on a vraiment besoin.</p>
           <ul>
@@ -35,7 +34,6 @@ export function renderValue() {
           </ul>
         </article>
         <article data-reveal>
-          <span class="column-index">02 /</span>
           <h3>Concevoir</h3>
           <p>La solution juste, au bon niveau.</p>
           <ul>
@@ -45,7 +43,6 @@ export function renderValue() {
           </ul>
         </article>
         <article data-reveal>
-          <span class="column-index">03 /</span>
           <h3>Faire aboutir</h3>
           <p>Du cadrage à l’usage réel.</p>
           <ul>

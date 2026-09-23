@@ -9,14 +9,14 @@ export function renderExpertise() {
   >
     <div class="container">
       <header class="section-heading">
-        <p class="eyebrow"><span>03</span> Expertise</p>
+        <p class="eyebrow">Expertise</p>
         <h2 id="expertise-title">Ce que je peux<br />prendre en charge</h2>
       </header>
       <div class="expertise-grid">
         ${expertise
           .map(
             (domain, index) =>
-              `<article data-reveal><span class="column-index">0${index + 1} /</span><h3>${e(domain.title)}</h3><p>${e(domain.description)}</p><ul>${domain.items.map((item) => `<li>${e(item)}</li>`).join("")}</ul></article>`,
+              `<article data-reveal><h3>${e(domain.title)}</h3><p>${e(domain.description)}</p><ul>${domain.items.map((item) => `<li>${e(item)}</li>`).join("")}</ul></article>`,
           )
           .join("")}
       </div>
