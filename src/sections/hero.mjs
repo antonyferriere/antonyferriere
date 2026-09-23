@@ -12,7 +12,7 @@ export function renderHero() {
     <div class="hero-content container">
       <div class="hero-copy">
         <p class="eyebrow hero-role">${escapeHtml(profile.role)}</p>
-        <h1 id="hero-title">Antony<br /><span>Ferrière.</span></h1>
+        <h1 id="hero-title">Antony<br /><span>Ferrière</span></h1>
         <p class="hero-disciplines">
           Tech <span>·</span> Produit <span>·</span> Métier
         </p>

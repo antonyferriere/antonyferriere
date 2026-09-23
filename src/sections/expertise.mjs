@@ -10,7 +10,7 @@ export function renderExpertise() {
     <div class="container">
       <header class="section-heading">
         <p class="eyebrow"><span>03</span> Expertise</p>
-        <h2 id="expertise-title">Ce que je peux<br />prendre en charge.</h2>
+        <h2 id="expertise-title">Ce que je peux<br />prendre en charge</h2>
       </header>
       <div class="expertise-grid">
         ${expertise
@@ -22,8 +22,8 @@ export function renderExpertise() {
       </div>
       <div class="technical-culture">
         <div>
-          <h3>Une culture technique<br />pour mieux décider.</h3>
-          <p>Comprendre les choix.<br />En mesurer les conséquences.</p>
+          <h3>Une culture technique<br />pour mieux décider</h3>
+          <p>Comprendre les choix<br />En mesurer les conséquences</p>
         </div>
         <div>
           <p class="technical-label">Développement & outils</p>

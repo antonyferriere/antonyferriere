@@ -11,7 +11,7 @@ export function renderAchievements() {
       <header class="section-heading">
         <p class="eyebrow"><span>02</span> Réalisations</p>
         <h2 id="achievements-title">
-          Quelques problèmes que<br />j’ai contribué à résoudre.
+          Quelques problèmes que<br />j’ai contribué à résoudre
         </h2>
         <p class="section-intro">
           Des contextes différents. Un même fil conducteur : comprendre la

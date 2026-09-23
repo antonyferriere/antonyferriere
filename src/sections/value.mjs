@@ -9,7 +9,7 @@ export function renderValue() {
         <header class="section-heading">
           <p class="eyebrow"><span>01</span> Ma valeur ajoutée</p>
           <h2 id="value-title">
-            Je fais<br /><span class="accent">le lien.</span>
+            Je fais<br /><span class="accent">le lien</span>
           </h2>
         </header>
         <div class="value-intro-copy">
