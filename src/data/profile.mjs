@@ -13,6 +13,7 @@ export const profile = {
 };
 
 export const navigation = [
+  ["approche", "Valeur ajoutée"],
   ["realisations", "Réalisations"],
   ["expertise", "Expertise"],
   ["parcours", "Parcours"],
