@@ -62,3 +62,9 @@ Les budgets bloquants sont de 10 ko gzip de JavaScript et 15 ko gzip de CSS. **A
 - Canonique de destination : `https://antony.ferrie.re/`.
 - Développement et historique fonctionnel sur `dev`. `main` et `preprod` conservent l’initialisation du dépôt jusqu’à promotion explicite.
 - Aperçu privé séparé : aucun remplacement du domaine de production ni changement DNS.
+
+## Maintenance des dépendances — 23 septembre 2026
+
+Vite est passé de 7.3.1 à 7.3.6 et sa dépendance esbuild est verrouillée en 0.28.2, pour corriger les alertes remontées par `npm audit`. Aucun changement de version majeure ni surcharge de dépendance n’a été nécessaire.
+
+Après une réinstallation avec `npm ci --audit` : **0 vulnérabilité connue détectée**, build réussi, 8 tests réussis et contrôle du livrable réussi. Ce résultat décrit l’état de la base d’avis de sécurité à cette date, pas une garantie permanente d’absence de vulnérabilités. Les vérifications ont été exécutées sous Linux ; les correctifs Windows proviennent des versions publiées par les mainteneurs.

@@ -30,6 +30,7 @@ Le serveur de développement utilise le port `4173`. Ouvrir l’adresse indiqué
 npm run build    # Génère dist/, prêt pour un hébergement statique
 npm test         # Thèmes, persistance, repli et contrastes des tokens
 npm run check    # Contrôle le build : structure, liens internes, médias, SEO, budgets
+npm audit        # Vulnérabilités connues, dépendances de développement incluses
 npm run preview  # Sert le build localement
 ```
 
