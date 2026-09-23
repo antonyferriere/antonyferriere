@@ -24,7 +24,7 @@ npm ci
 npm run dev
 ```
 
-Le serveur de développement utilise le port `4173`. Ouvrir l’adresse indiquée dans le terminal. Les changements dans les données et les sections régénèrent automatiquement le HTML.
+Le serveur de développement utilise le port `4173`. Ouvrir **http://localhost:4173/**. Les changements dans les données et les sections régénèrent automatiquement le HTML. Si Chrome remplace automatiquement `http` par `https`, utiliser le mode HTTPS ci-dessous.
 
 ```sh
 npm run build    # Génère dist/, prêt pour un hébergement statique
@@ -35,6 +35,40 @@ npm run preview  # Sert le build localement
 ```
 
 Exécuter `build` avant `check`. `index.html` à la racine et `dist/` sont générés ; ils ne se modifient pas et ne se versionnent pas.
+
+### HTTPS local
+
+Vite peut utiliser un certificat créé sur votre ordinateur avec [mkcert](https://github.com/FiloSottile/mkcert). Aucun plugin npm supplémentaire n’est nécessaire. Les commandes suivantes sont prévues pour **Windows / PowerShell**.
+
+1. Arrêter le serveur en cours avec `Ctrl+C`. Installer mkcert une seule fois :
+
+   ```powershell
+   winget install --id FiloSottile.mkcert --exact --source winget
+   ```
+
+   Fermer puis rouvrir VS Code pour actualiser le `PATH`. Si WinGet n’est pas disponible, utiliser une des [autres installations officielles de mkcert](https://github.com/FiloSottile/mkcert#windows).
+
+2. Depuis la racine du dépôt, préparer le certificat :
+
+   ```powershell
+   mkcert -install
+   New-Item -ItemType Directory -Force .cert | Out-Null
+   mkcert -cert-file .cert/localhost.pem -key-file .cert/localhost-key.pem localhost 127.0.0.1 ::1
+   ```
+
+   `mkcert -install` ajoute une autorité de certification locale au magasin de confiance Windows ; Windows peut demander une confirmation. Cela permet à Chrome de reconnaître les certificats qu’elle signe. Garder les clés privées sur cet ordinateur : ne jamais partager `rootCA-key.pem` ni la clé du serveur. Le dossier `.cert/` et les fichiers de clés sont ignorés par Git.
+
+3. Lancer le site :
+
+   ```powershell
+   npm run dev:https
+   ```
+
+   Ouvrir **https://localhost:4173/**. Le mode HTTPS écoute uniquement sur `localhost`. Redémarrer Chrome s’il n’a pas encore pris en compte la nouvelle autorité de certification. Le rechargement automatique reste actif.
+
+La préparation du certificat se fait une fois par ordinateur, puis à son expiration. Pour les lancements suivants, seule la commande `npm run dev:https` est nécessaire. Un certificat absent provoque un message explicite, sans basculer silencieusement en HTTP.
+
+Pour vérifier le build en HTTPS, exécuter `npm run build`, puis `npm run preview:https`. Les modes HTTP et HTTPS partagent le port `4173` : arrêter l’un avant de lancer l’autre. Les certificats locaux ne sont ni requis par le build ni inclus dans `dist/` ; l’hébergeur gère le HTTPS de production.
 
 ## Architecture
 

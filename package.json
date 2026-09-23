@@ -8,8 +8,10 @@
   },
   "scripts": {
     "dev": "node scripts/render.mjs && vite --host 0.0.0.0",
+    "dev:https": "node scripts/render.mjs && vite --mode local-https",
     "build": "node scripts/render.mjs && vite build",
     "preview": "vite preview --host 0.0.0.0",
+    "preview:https": "vite preview --mode local-https",
     "check": "node scripts/check.mjs",
     "test": "node --test tests/*.test.mjs"
   },

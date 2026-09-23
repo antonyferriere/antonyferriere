@@ -4,6 +4,9 @@ index.html
 .env
 .env.*
 !.env.example
+.cert/
+*.pem
+*.key
 .sites-runtime/
 .openai/*.credential*
 .DS_Store
