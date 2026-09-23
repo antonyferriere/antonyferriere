@@ -1,11 +1,11 @@
 const steps = [
-  ["Écouter", "Les personnes, leurs usages, leur réalité."],
-  ["Clarifier", "Le problème, les contraintes, l’objectif."],
-  ["Simplifier", "Les parcours comme les solutions."],
-  ["Prioriser", "La valeur, l’effort, les dépendances."],
-  ["Construire", "Ensemble, par étapes concrètes."],
-  ["Mesurer", "Ce qui fonctionne dans l’usage réel."],
-  ["Améliorer", "Apprendre, ajuster, faire évoluer."],
+  ["Écouter", "Les personnes, leurs usages, leur réalité"],
+  ["Clarifier", "Le problème, les contraintes, l’objectif"],
+  ["Simplifier", "Les parcours comme les solutions"],
+  ["Prioriser", "La valeur, l’effort, les dépendances"],
+  ["Construire", "Ensemble, par étapes concrètes"],
+  ["Mesurer", "Ce qui fonctionne dans l’usage réel"],
+  ["Améliorer", "Apprendre, ajuster, faire évoluer"],
 ];
 export function renderMethod() {
   return /* HTML */ `<section
@@ -15,8 +15,8 @@ export function renderMethod() {
   >
     <div class="container">
       <header class="section-heading">
-        <p class="eyebrow"><span>05</span> Méthode</p>
-        <h2 id="method-title">Ma façon d’aborder<br />un projet.</h2>
+        <p class="eyebrow">Méthode</p>
+        <h2 id="method-title">Ma façon d’aborder<br />un projet</h2>
         <p class="section-intro">
           Avancer avec une direction claire, des étapes concrètes et la place
           nécessaire pour apprendre.
@@ -26,7 +26,7 @@ export function renderMethod() {
         ${steps
           .map(
             ([name, detail], i) =>
-              `<li data-reveal><span class="step-number">0${i + 1}</span><h3>${name}</h3><p>${detail}</p></li>`,
+              `<li data-reveal><h3>${name}</h3><p>${detail}</p></li>`,
           )
           .join("")}
       </ol>

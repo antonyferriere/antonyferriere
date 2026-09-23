@@ -141,13 +141,6 @@
   border-top: 1px solid var(--color-strong-border);
 }
 
-.step-number {
-  display: block;
-  font-size: 0.75rem;
-  color: var(--color-text-muted);
-  margin-bottom: 1.4rem;
-}
-
 .method-steps h3 {
   font-size: 1.05rem;
   color: var(--color-primary);
@@ -236,11 +229,6 @@
     column-gap: 1rem;
     padding-block: 1.25rem;
     min-width: 0;
-  }
-  .step-number {
-    grid-row: span 2;
-    padding-top: 0.1rem;
-    margin: 0;
   }
   .method-steps h3 {
     font-size: 1.25rem;

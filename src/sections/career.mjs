@@ -27,9 +27,9 @@ export function renderCareer() {
   >
     <div class="container career-layout">
       <header class="section-heading career-heading">
-        <p class="eyebrow"><span>04</span> Parcours</p>
+        <p class="eyebrow">Parcours</p>
         <h2 id="career-title">
-          Du code à la<br />vision globale<br />du produit.
+          Du code à la<br />vision globale<br />du produit
         </h2>
         <p class="section-intro">
           Chaque étape a ajouté une perspective. Ensemble, elles m’aident à voir

@@ -91,8 +91,7 @@
   overflow: hidden;
 }
 
-.contact-section .eyebrow,
-.contact-section .eyebrow > span {
+.contact-section .eyebrow {
   color: var(--color-contact-muted);
 }
 

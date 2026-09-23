@@ -9,9 +9,9 @@ export function renderAchievements() {
   >
     <div class="container">
       <header class="section-heading">
-        <p class="eyebrow"><span>02</span> Réalisations</p>
+        <p class="eyebrow">Réalisations</p>
         <h2 id="achievements-title">
-          Quelques problèmes que<br />j’ai contribué à résoudre.
+          Quelques problèmes que<br />j’ai contribué à résoudre
         </h2>
         <p class="section-intro">
           Des contextes différents. Un même fil conducteur : comprendre la

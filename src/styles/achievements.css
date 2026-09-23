@@ -60,12 +60,6 @@
   margin-bottom: 1.5rem;
 }
 
-.case-meta > span {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  color: var(--color-primary);
-}
-
 .achievement h3 {
   font-size: clamp(1.5rem, 2.3vw, 2.1rem);
   max-width: 400px;
