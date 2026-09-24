@@ -8,11 +8,17 @@ La palette part du bleu profond `#000D23` et du vert `#88E3B8`. Les trois compos
 
 | Usage | Export léger | Export détaillé |
 | --- | --- | --- |
-| Desktop et paysage | `lumen-vivant-desktop-1280.webp` — 1280 × 720, 92 542 octets | `lumen-vivant-desktop.webp` — 1672 × 941, 139 456 octets |
-| Tablette en portrait | `lumen-vivant-tablet-768.webp` — 768 × 1024, 98 610 octets | `lumen-vivant-tablet.webp` — 1086 × 1448, 170 490 octets |
-| Mobile | `lumen-vivant-mobile-480.webp` — 480 × 1012, 65 614 octets | `lumen-vivant-mobile.webp` — 864 × 1821, 164 848 octets |
+| Desktop et paysage | `lumen-vivant-desktop-1280.webp` — 1280 × 720, 657 612 octets | `lumen-vivant-desktop.webp` — 1672 × 941, 1 052 122 octets |
+| Tablette en portrait | `lumen-vivant-tablet-768.webp` — 768 × 1024, 658 598 octets | `lumen-vivant-tablet.webp` — 1086 × 1448, 1 228 472 octets |
+| Mobile | `lumen-vivant-mobile-480.webp` — 480 × 1012, 446 982 octets | `lumen-vivant-mobile.webp` — 864 × 1821, 1 279 118 octets |
 
-Tous se trouvent dans `public/images/`. Les résolutions détaillées sont celles réellement produites par le générateur ; aucun agrandissement artificiel n’a été appliqué. Les exports légers sont redimensionnés proportionnellement et tous les exports sont encodés en WebP, qualité 78. Aucune dépendance de traitement d’image n’est ajoutée au projet.
+Tous se trouvent dans `public/images/`. Les résolutions détaillées sont celles réellement produites par le générateur ; aucun agrandissement artificiel n’a été appliqué. Les exports initiaux étaient encodés en WebP, qualité 78. Les six exports actuels sont encodés sans perte pour conserver exactement les pixels hors de la retouche. Aucune dépendance de traitement d’image n’est ajoutée au projet.
+
+### Révision : réseau lumineux
+
+Ajout d’un réseau fin de traits turquoise et de points lumineux dans le coin inférieur droit, à partir de la référence « 1. Landing page - Lumen vivant(2).png ». Trois calques transparents ont été générés avec l’outil intégré puis adaptés aux deux résolutions de chaque composition. Ils ont été assemblés sur chacun des six fichiers d’origine, sans régénérer le paysage. Dimensions conservées et comparaison pixel à pixel : aucune modification hors du réseau.
+
+Le site utilise les six WebP livrés, sans nouvelle compression. Le paramètre `v=reseau-1` des URL renouvelle le cache des images à cette mise à jour ; les règles responsive et la parallaxe sont conservées.
 
 ## Sélection responsive
 

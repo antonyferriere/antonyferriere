@@ -82,16 +82,16 @@
   --color-contact-accent: #88e3b8;
   --shadow-soft: 0 18px 60px #00071866;
   --hero-image: image-set(
-    url("/images/lumen-vivant-desktop-1280.webp") 1x,
-    url("/images/lumen-vivant-desktop.webp") 2x
+    url("/images/lumen-vivant-desktop-1280.webp?v=reseau-1") 1x,
+    url("/images/lumen-vivant-desktop.webp?v=reseau-1") 2x
   );
   --hero-image-tablet: image-set(
-    url("/images/lumen-vivant-tablet-768.webp") 1x,
-    url("/images/lumen-vivant-tablet.webp") 2x
+    url("/images/lumen-vivant-tablet-768.webp?v=reseau-1") 1x,
+    url("/images/lumen-vivant-tablet.webp?v=reseau-1") 2x
   );
   --hero-image-small: image-set(
-    url("/images/lumen-vivant-mobile-480.webp") 1x,
-    url("/images/lumen-vivant-mobile.webp") 2x
+    url("/images/lumen-vivant-mobile-480.webp?v=reseau-1") 1x,
+    url("/images/lumen-vivant-mobile.webp?v=reseau-1") 2x
   );
   --hero-position-small: center top;
   --hero-opacity-small: 1;
@@ -124,6 +124,6 @@
 
 @media (min-width: 1281px) {
   [data-theme="lumen"] {
-    --hero-image: url("/images/lumen-vivant-desktop.webp");
+    --hero-image: url("/images/lumen-vivant-desktop.webp?v=reseau-1");
   }
 }
