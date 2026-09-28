@@ -109,6 +109,7 @@
 }
 
 .contact-cta {
+  color: var(--color-contact-accent, var(--color-contact-text));
   display: inline-flex;
   align-items: center;
   gap: clamp(0.5rem, 3vw, 3rem);

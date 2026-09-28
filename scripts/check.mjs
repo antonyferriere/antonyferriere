@@ -43,7 +43,7 @@ for (const name of await readdir("dist/assets")) {
     cssBytes += gzipSync(bytes).length;
     for (const match of bytes
       .toString()
-      .matchAll(/url\(["']?(\/[^)"']+)["']?\)/g))
+      .matchAll(/url\(["']?(\/[^)"'?#]+)(?:[?#][^)"']*)?["']?\)/g))
       await access(join("dist", match[1]));
   }
 }
