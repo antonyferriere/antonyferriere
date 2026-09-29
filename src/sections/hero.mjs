@@ -29,7 +29,7 @@ export function renderHero() {
         </div>
       </div>
       <div
-        class="hero-process"
+        class="card hero-process"
         role="group"
         aria-label="Analyser, concevoir, concrétiser"
       >

@@ -24,7 +24,7 @@ export function renderValue() {
         </div>
       </div>
       <div class="value-columns">
-        <article data-reveal>
+        <article class="card" data-reveal>
           <h3>Comprendre</h3>
           <p>Ce dont on a vraiment besoin.</p>
           <ul>
@@ -33,7 +33,7 @@ export function renderValue() {
             <li>Problématiques métier</li>
           </ul>
         </article>
-        <article data-reveal>
+        <article class="card" data-reveal>
           <h3>Concevoir</h3>
           <p>La solution juste, au bon niveau.</p>
           <ul>
@@ -42,7 +42,7 @@ export function renderValue() {
             <li>Simplicité</li>
           </ul>
         </article>
-        <article data-reveal>
+        <article class="card" data-reveal>
           <h3>Faire aboutir</h3>
           <p>Du cadrage à l’usage réel.</p>
           <ul>
@@ -56,15 +56,15 @@ export function renderValue() {
         <p class="three-u-intro">
           Mon repère pour une<br />solution réussie <span>Les 3 U</span>
         </p>
-        <div>
+        <div class="card">
           <strong>Utile<span>.</span></strong>
           <p>Elle répond à un vrai besoin.</p>
         </div>
-        <div>
+        <div class="card">
           <strong>Utilisable<span>.</span></strong>
           <p>Elle rend les choses simples.</p>
         </div>
-        <div>
+        <div class="card">
           <strong>Utilisé<span>.</span></strong>
           <p>Elle trouve sa place au quotidien.</p>
         </div>

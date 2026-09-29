@@ -93,11 +93,7 @@
   justify-self: end;
   align-self: end;
   margin-bottom: 5.5rem;
-  padding: 1rem 1.5rem;
   width: 250px;
-  background: var(--color-glass);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-small);
 }
 .hero-process p {
   font-family: var(--font-heading);

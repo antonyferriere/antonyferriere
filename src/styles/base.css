@@ -110,6 +110,12 @@ strong {
   width: min(var(--content-width), calc(100% - 7rem));
   margin-inline: auto;
 }
+.card {
+  padding: var(--card-padding, 1rem 1.5rem);
+  background: var(--color-glass);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-small);
+}
 .icon {
   width: 1.25rem;
   height: 1.25rem;
