@@ -132,7 +132,9 @@ Ne pas ajouter de chiffre d’impact, de référence client ou d’expérience s
 
 ## Accessibilité et performance
 
-HTML français et sémantique, un seul `h1`, ordre logique des titres, lien d’évitement, focus visible, navigation au clavier, menu refermable avec Échap et accordéons natifs `<details>`.
+HTML français et sémantique, un seul `h1`, ordre logique des titres, lien d’évitement, focus visible, navigation au clavier et menu refermable avec Échap.
+
+« Explorer ce cas » ouvre le détail de la réalisation dans une modale native `<dialog>`, adaptée aux deux thèmes et aux petits écrans. La croix, Échap ou un clic sur le fond ferment la modale et rendent le focus au bouton d’ouverture. La page reste immobile pendant la lecture ; le contenu de la modale peut défiler et sa croix reste accessible. Sans JavaScript ou sans prise en charge de `showModal`, les détails restent consultables dans les accordéons natifs `<details>`.
 
 Les apparitions utilisent `IntersectionObserver` ; les contenus restent visibles si cette API ou JavaScript est indisponible. Un élément contenant le focus devient visible immédiatement. La réduction des animations couvre aussi le scroll et le changement de thème.
 

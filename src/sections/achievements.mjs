@@ -1,5 +1,6 @@
 import { achievements } from "../data/achievements.mjs";
 import { renderAchievement } from "../components/achievement.mjs";
+import { icon } from "../components/html.mjs";
 
 export function renderAchievements() {
   return /* HTML */ `<section
@@ -25,6 +26,21 @@ export function renderAchievements() {
           .map((item) => renderAchievement(item))
           .join("")}
       </div>
+      <dialog class="card case-dialog" id="case-dialog" aria-labelledby="case-dialog-title">
+        <header class="case-dialog-header">
+          <div>
+            <p class="case-meta" data-case-category></p>
+            <h2 id="case-dialog-title"></h2>
+          </div>
+          <button
+            class="case-dialog-close"
+            type="button"
+            aria-label="Fermer ce cas"
+            autofocus
+          >${icon("close")}</button>
+        </header>
+        <div class="case-dialog-body"></div>
+      </dialog>
     </div>
   </section>`;
 }

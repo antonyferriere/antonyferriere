@@ -22,13 +22,22 @@ export function renderAchievement(item, featured = false) {
       <ul class="tags">
         ${item.tags.map((tag) => `<li>${e(tag)}</li>`).join("")}
       </ul>
+      <button
+        class="case-trigger"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="case-dialog"
+        hidden
+      >
+        Explorer ce cas<span class="sr-only"> : ${e(item.title)}</span>${icon("diagonal")}
+      </button>
       <details class="case-details">
         <summary>
           Explorer ce cas<span class="sr-only"> : ${e(item.title)}</span>${icon(
             "plus",
           )}<span class="details-close">Réduire</span>
         </summary>
-        <dl>
+        <dl class="case-fields">
           ${fields
             .map(
               ([label, value]) =>
