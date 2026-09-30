@@ -42,11 +42,36 @@ export function initNavigation() {
   });
   desktop.addEventListener("change", () => setMenu(false));
 
+  const links = [...menu.querySelectorAll('a[href^="#"]')];
+  const sections = [...document.querySelectorAll("main > section[id]")];
+  let currentSectionId = null;
   let framePending = false;
   function updateScroll() {
     const max = document.documentElement.scrollHeight - innerHeight;
     header.classList.toggle("is-scrolled", scrollY > 32);
     progress.style.transform = `scaleX(${max > 0 ? Math.min(1, scrollY / max) : 0})`;
+
+    // Use the anchor landing line, not the order of intersection events:
+    // two adjacent sections can be visible while scrolling in either direction.
+    const activationLine = Math.max(
+      parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0,
+      header.getBoundingClientRect().bottom,
+    ) + 1; // Allow for fractional pixels when the browser positions an anchor.
+    let sectionId = null;
+    for (const section of sections) {
+      if (section.getBoundingClientRect().top > activationLine) break;
+      sectionId = section.id;
+    }
+    // The last section may be too short to reach the landing line.
+    if (max > 0 && scrollY >= max - 1) sectionId = sections.at(-1)?.id ?? null;
+    if (sectionId !== currentSectionId) {
+      for (const link of links) {
+        if (link.hash === `#${sectionId}`)
+          link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
+      }
+      currentSectionId = sectionId;
+    }
     framePending = false;
   }
   window.addEventListener(
@@ -61,23 +86,4 @@ export function initNavigation() {
   );
   window.addEventListener("resize", updateScroll, { passive: true });
   updateScroll();
-
-  if (!("IntersectionObserver" in window)) return;
-  const links = [...menu.querySelectorAll('a[href^="#"]')];
-  const observer = new IntersectionObserver(
-    (entries) => {
-      for (const entry of entries) {
-        if (!entry.isIntersecting) continue;
-        for (const link of links) {
-          if (link.hash === `#${entry.target.id}`)
-            link.setAttribute("aria-current", "location");
-          else link.removeAttribute("aria-current");
-        }
-      }
-    },
-    { rootMargin: "-10% 0px -65% 0px" },
-  );
-  document
-    .querySelectorAll("main > section[id]")
-    .forEach((section) => observer.observe(section));
 }
