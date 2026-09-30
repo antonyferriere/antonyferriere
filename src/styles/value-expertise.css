@@ -56,6 +56,9 @@
   display: grid;
   grid-template-columns: 0.85fr repeat(3, minmax(0, 1fr));
   gap: var(--space-md);
+  padding: 2.5rem;
+  background: var(--color-background-alt);
+  border-radius: var(--radius-small);
 }
 
 .three-u-intro {
@@ -74,10 +77,6 @@
 .three-u strong {
   font: 500 clamp(1.8rem, 3vw, 2.8rem) / 1.2 var(--font-heading);
   letter-spacing: -0.05em;
-}
-
-.three-u strong span {
-  color: var(--color-accent);
 }
 
 .three-u div p {

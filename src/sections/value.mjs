@@ -57,15 +57,15 @@ export function renderValue() {
           Mon repère pour une<br />solution réussie <span>Les 3 U</span>
         </p>
         <div class="card">
-          <strong>Utile<span>.</span></strong>
+          <strong>Utile</strong>
           <p>Elle répond à un vrai besoin.</p>
         </div>
         <div class="card">
-          <strong>Utilisable<span>.</span></strong>
+          <strong>Utilisable</strong>
           <p>Elle rend les choses simples.</p>
         </div>
         <div class="card">
-          <strong>Utilisé<span>.</span></strong>
+          <strong>Utilisé</strong>
           <p>Elle trouve sa place au quotidien.</p>
         </div>
       </div>
