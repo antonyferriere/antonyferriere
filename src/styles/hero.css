@@ -94,6 +94,7 @@
   align-self: end;
   margin-bottom: 5.5rem;
   width: 250px;
+  background: var(--color-glass);
 }
 .hero-process p {
   font-family: var(--font-heading);
@@ -206,6 +207,7 @@
     padding: 0;
     border: 0;
     background: none;
+    box-shadow: none;
     margin-bottom: 3rem;
   }
   .hero-process p {

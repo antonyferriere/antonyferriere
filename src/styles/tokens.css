@@ -38,6 +38,7 @@
   --color-contact: #234637;
   --color-contact-text: #f3f0e8;
   --color-contact-muted: #cbdcd0;
+  --shadow-card: 0 2px 6px #2632420a, 0 8px 24px #2632420d;
   --shadow-soft: 0 18px 60px #2632420d;
   --hero-image: image-set(
     url("/images/jardin-mediterraneen-desktop-1280.webp") 1x,
@@ -99,6 +100,7 @@
   --color-contact-text: #e9f1f3;
   --color-contact-muted: #b4cfd2;
   --color-contact-accent: #88e3b8;
+  --shadow-card: 0 2px 6px #00071833, 0 8px 24px #0007184d;
   --shadow-soft: 0 18px 60px #00071866;
   --hero-image: image-set(
     url("/images/lumen-vivant-desktop-1280.webp?v=reseau-1") 1x,
