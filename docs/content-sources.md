@@ -16,7 +16,7 @@ Les documents de travail et leurs contenus privés ne sont pas publiés avec le 
 
 ## Périmètre des affirmations
 
-- **20+ ans** : cohérent avec le début du parcours en 2002.
+- **+20 ans** : cohérent avec le début du parcours en 2002.
 - **Environ 150 000 contacts** : volume du CRM du périmètre Key4events.
 - **Plus de 6 M€ de chiffre d’affaires annuel** : volume d’activité supporté par les parcours ; ni revenu personnel ni gain attribué à l’intervention d’Antony.
 - **Conversion et adoption** : objectifs et axes de travail. Aucun pourcentage d’amélioration n’est inventé.

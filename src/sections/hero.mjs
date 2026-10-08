@@ -29,7 +29,7 @@ export function renderHero() {
         </div>
       </div>
       <div
-        class="hero-process"
+        class="card hero-process"
         role="group"
         aria-label="Analyser, concevoir, concrétiser"
       >
@@ -39,7 +39,7 @@ export function renderHero() {
       </div>
       <div class="hero-foot">
         <ul class="hero-proof">
-          <li><strong>20+</strong><span>ans dans le numérique</span></li>
+          <li><strong>+20</strong><span>ans dans le numérique</span></li>
           <li>Pilotage de bout en bout</li>
           <li>UX / Produit</li>
           <li>Innovation &amp; IA</li>

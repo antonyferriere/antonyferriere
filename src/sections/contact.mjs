@@ -26,7 +26,7 @@ export function renderContact() {
           <p class="contact-roles">
             Chef de projet IT senior · Product Owner<br />Responsable applicatif
           </p>
-          <p>${profile.location}<br /><span>Nice · Sophia Antipolis</span></p>
+          <p>${profile.location}<br /><span>Nice · Sophia Antipolis · Monaco</span></p>
         </div>
       </div>
       <div class="contact-links">

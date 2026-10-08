@@ -9,12 +9,12 @@ export function renderValue() {
         <header class="section-heading">
           <p class="eyebrow">Ma valeur ajoutée</p>
           <h2 id="value-title">
-            Je fais<br /><span class="accent">le lien</span>
+            Je fais <span class="accent">le lien</span>
           </h2>
         </header>
         <div class="value-intro-copy">
           <p>
-            Entre les utilisateurs,<br />les métiers et les équipes techniques.
+            Entre les utilisateurs,<br /> les métiers et les équipes techniques.
           </p>
           <p>
             Je comprends les développeurs parce que j’en ai été un. J’écoute les
@@ -24,7 +24,7 @@ export function renderValue() {
         </div>
       </div>
       <div class="value-columns">
-        <article data-reveal>
+        <article class="card" data-reveal>
           <h3>Comprendre</h3>
           <p>Ce dont on a vraiment besoin.</p>
           <ul>
@@ -33,7 +33,7 @@ export function renderValue() {
             <li>Problématiques métier</li>
           </ul>
         </article>
-        <article data-reveal>
+        <article class="card" data-reveal>
           <h3>Concevoir</h3>
           <p>La solution juste, au bon niveau.</p>
           <ul>
@@ -42,7 +42,7 @@ export function renderValue() {
             <li>Simplicité</li>
           </ul>
         </article>
-        <article data-reveal>
+        <article class="card" data-reveal>
           <h3>Faire aboutir</h3>
           <p>Du cadrage à l’usage réel.</p>
           <ul>
@@ -54,18 +54,18 @@ export function renderValue() {
       </div>
       <div class="three-u" data-reveal>
         <p class="three-u-intro">
-          Mon repère pour une<br />solution réussie <span>Les 3 U</span>
+          Mon repère pour une<br /> solution réussie <span>Les 3 U</span>
         </p>
-        <div>
-          <strong>Utile<span>.</span></strong>
+        <div class="card">
+          <strong>Utile</strong>
           <p>Elle répond à un vrai besoin.</p>
         </div>
-        <div>
-          <strong>Utilisable<span>.</span></strong>
+        <div class="card">
+          <strong>Utilisable</strong>
           <p>Elle rend les choses simples.</p>
         </div>
-        <div>
-          <strong>Utilisé<span>.</span></strong>
+        <div class="card">
+          <strong>Utilisé</strong>
           <p>Elle trouve sa place au quotidien.</p>
         </div>
       </div>

@@ -26,7 +26,7 @@ export function renderMethod() {
         ${steps
           .map(
             ([name, detail], i) =>
-              `<li data-reveal><h3>${name}</h3><p>${detail}</p></li>`,
+              `<li class="card" data-reveal><h3>${name}</h3><p>${detail}</p></li>`,
           )
           .join("")}
       </ol>

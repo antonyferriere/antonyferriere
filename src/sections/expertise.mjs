@@ -16,7 +16,7 @@ export function renderExpertise() {
         ${expertise
           .map(
             (domain, index) =>
-              `<article data-reveal><h3>${e(domain.title)}</h3><p>${e(domain.description)}</p><ul>${domain.items.map((item) => `<li>${e(item)}</li>`).join("")}</ul></article>`,
+              `<article class="card" data-reveal><h3>${e(domain.title)}</h3><p>${e(domain.description)}</p><ul>${domain.items.map((item) => `<li>${e(item)}</li>`).join("")}</ul></article>`,
           )
           .join("")}
       </div>

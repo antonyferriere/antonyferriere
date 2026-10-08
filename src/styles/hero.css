@@ -9,7 +9,7 @@
   position: absolute;
   z-index: -3;
   inset: 0;
-  background: var(--hero-image) center / cover no-repeat;
+  background: var(--hero-image) var(--hero-position, center) / cover no-repeat;
 }
 .hero::before {
   content: "";
@@ -93,11 +93,8 @@
   justify-self: end;
   align-self: end;
   margin-bottom: 5.5rem;
-  padding: 1rem 1.5rem;
   width: 250px;
   background: var(--color-glass);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-small);
 }
 .hero-process p {
   font-family: var(--font-heading);
@@ -210,6 +207,7 @@
     padding: 0;
     border: 0;
     background: none;
+    box-shadow: none;
     margin-bottom: 3rem;
   }
   .hero-process p {
