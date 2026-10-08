@@ -9,12 +9,12 @@ export function renderValue() {
         <header class="section-heading">
           <p class="eyebrow">Ma valeur ajoutée</p>
           <h2 id="value-title">
-            Je fais<br /><span class="accent">le lien</span>
+            Je fais <span class="accent">le lien</span>
           </h2>
         </header>
         <div class="value-intro-copy">
           <p>
-            Entre les utilisateurs,<br />les métiers et les équipes techniques.
+            Entre les utilisateurs,<br /> les métiers et les équipes techniques.
           </p>
           <p>
             Je comprends les développeurs parce que j’en ai été un. J’écoute les
@@ -54,7 +54,7 @@ export function renderValue() {
       </div>
       <div class="three-u" data-reveal>
         <p class="three-u-intro">
-          Mon repère pour une<br />solution réussie <span>Les 3 U</span>
+          Mon repère pour une<br /> solution réussie <span>Les 3 U</span>
         </p>
         <div class="card">
           <strong>Utile</strong>
