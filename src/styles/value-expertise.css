@@ -3,24 +3,33 @@
   --landscape-image-tablet: var(--value-image-tablet);
   --landscape-image-small: var(--value-image-small);
   --landscape-position: 70% center;
-  --landscape-veil: linear-gradient(90deg,
+  --landscape-veil: linear-gradient(
+    90deg,
     var(--color-background) 0%,
     color-mix(in srgb, var(--color-background) 94%, transparent) 25%,
     color-mix(in srgb, var(--color-background) 40%, transparent) 55%,
-    transparent 80%);
-  --landscape-veil-small: linear-gradient(90deg,
+    transparent 80%
+  );
+  --landscape-veil-small: linear-gradient(
+    90deg,
     color-mix(in srgb, var(--color-background) 96%, transparent),
     color-mix(in srgb, var(--color-background) 82%, transparent) 60%,
-    color-mix(in srgb, var(--color-background) 55%, transparent));
+    color-mix(in srgb, var(--color-background) 55%, transparent)
+  );
   --landscape-fade-inset: 0;
   /* Fixed veils stay still while the landscape moves, with opaque section edges. */
-  --landscape-fade: linear-gradient(180deg,
+  --landscape-fade: linear-gradient(
+    180deg,
     var(--color-background) 0%,
     transparent 18%,
     transparent 75%,
-    var(--color-background-alt) 100%);
+    var(--color-background-alt) 100%
+  );
 }
-.value-section .card {
+
+.value-section .card,
+.three-u,
+.technical-culture {
   background: var(--color-glass);
 }
 
@@ -77,14 +86,16 @@
   line-height: 2;
 }
 
+.three-u,
+.technical-culture {
+  padding: 2.5rem;
+  border-radius: var(--radius-small);
+}
+
 .three-u {
   margin-top: 5rem;
-  display: grid;
   grid-template-columns: 0.85fr repeat(3, minmax(0, 1fr));
   gap: var(--space-md);
-  padding: 2.5rem;
-  background: var(--color-background-alt);
-  border-radius: var(--radius-small);
 }
 
 .three-u-intro {
@@ -139,9 +150,6 @@
   grid-template-columns: 1fr 2fr;
   gap: 4rem;
   margin-top: 4rem;
-  padding: 2.5rem;
-  background: var(--color-background-alt);
-  border-radius: var(--radius-small);
 }
 
 .technical-culture h3 {
