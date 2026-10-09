@@ -1,9 +1,10 @@
 export function renderValue() {
   return /* HTML */ `<section
-    class="section value-section"
+    class="section value-section landscape-section"
     id="approche"
     aria-labelledby="value-title"
   >
+    <div class="section-landscape" aria-hidden="true"></div>
     <div class="container">
       <div class="value-intro">
         <header class="section-heading">

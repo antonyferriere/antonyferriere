@@ -1,0 +1,44 @@
+/* Shared landscape layers: theme/device selection stays in section variables. */
+.landscape-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.section-landscape {
+  position: absolute;
+  z-index: -3;
+  inset: 0;
+  pointer-events: none;
+  background: var(--landscape-image) var(--landscape-position, center) / cover no-repeat;
+}
+.landscape-section::before,
+.landscape-section::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+.landscape-section::before {
+  inset: 0;
+  z-index: -2;
+  background: var(--landscape-veil);
+}
+.landscape-section::after {
+  inset: var(--landscape-fade-inset, 55% 0 0);
+  z-index: -1;
+  background: var(--landscape-fade);
+}
+@media (min-width: 701px) and (max-width: 1100px) and (orientation: portrait) {
+  .section-landscape {
+    background-image: var(--landscape-image-tablet, var(--landscape-image));
+  }
+}
+@media (max-width: 700px) {
+  .landscape-section::before {
+    background: var(--landscape-veil-small, var(--landscape-veil));
+  }
+  .section-landscape {
+    background-image: var(--landscape-image-small, var(--landscape-image));
+    background-position: var(--landscape-position-small, center top);
+    opacity: var(--landscape-opacity-small, 1);
+  }
+}
