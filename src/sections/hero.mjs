@@ -3,11 +3,11 @@ import { icon, escapeHtml } from "../components/html.mjs";
 
 export function renderHero() {
   return /* HTML */ `<section
-    class="hero"
+    class="hero landscape-section"
     id="accueil"
     aria-labelledby="hero-title"
   >
-    <div class="hero-landscape" aria-hidden="true"></div>
+    <div class="hero-landscape section-landscape" aria-hidden="true"></div>
     <div class="hero-light" aria-hidden="true"></div>
     <div class="hero-content container">
       <div class="hero-copy">

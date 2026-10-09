@@ -4,10 +4,11 @@ import { icon } from "../components/html.mjs";
 
 export function renderAchievements() {
   return /* HTML */ `<section
-    class="section achievements-section"
+    class="section achievements-section landscape-section"
     id="realisations"
     aria-labelledby="achievements-title"
   >
+    <div class="section-landscape" aria-hidden="true"></div>
     <div class="container">
       <header class="section-heading">
         <p class="eyebrow">Réalisations</p>

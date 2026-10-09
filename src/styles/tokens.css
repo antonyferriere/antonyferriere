@@ -40,6 +40,54 @@
   --color-contact-muted: #cbdcd0;
   --shadow-card: 0 2px 6px #2632420a, 0 8px 24px #2632420d;
   --shadow-soft: 0 18px 60px #2632420d;
+  --achievements-image: image-set(
+    url("/images/realisation-garden-desktop-1280.webp") 1x,
+    url("/images/realisation-garden-desktop.webp") 2x
+  );
+  --achievements-image-tablet: image-set(
+    url("/images/realisation-garden-tablet-768.webp") 1x,
+    url("/images/realisation-garden-tablet.webp") 2x
+  );
+  --achievements-image-small: image-set(
+    url("/images/realisation-garden-mobile-480.webp") 1x,
+    url("/images/realisation-garden-mobile.webp") 2x
+  );
+  --expertise-image: image-set(
+    url("/images/expertise-garden-desktop-1280.webp") 1x,
+    url("/images/expertise-garden-desktop.webp") 2x
+  );
+  --expertise-image-tablet: image-set(
+    url("/images/expertise-garden-tablet-768.webp") 1x,
+    url("/images/expertise-garden-tablet.webp") 2x
+  );
+  --expertise-image-small: image-set(
+    url("/images/expertise-garden-mobile-480.webp") 1x,
+    url("/images/expertise-garden-mobile.webp") 2x
+  );
+  --method-image: image-set(
+    url("/images/methode-garden-desktop-1280.webp") 1x,
+    url("/images/methode-garden-desktop.webp") 2x
+  );
+  --method-image-tablet: image-set(
+    url("/images/methode-garden-tablet-768.webp") 1x,
+    url("/images/methode-garden-tablet.webp") 2x
+  );
+  --method-image-small: image-set(
+    url("/images/methode-garden-mobile-480.webp") 1x,
+    url("/images/methode-garden-mobile.webp") 2x
+  );
+  --value-image: image-set(
+    url("/images/value-garden-desktop-1280.webp") 1x,
+    url("/images/value-garden-desktop.webp") 2x
+  );
+  --value-image-tablet: image-set(
+    url("/images/value-garden-tablet-768.webp") 1x,
+    url("/images/value-garden-tablet.webp") 2x
+  );
+  --value-image-small: image-set(
+    url("/images/value-garden-mobile-480.webp") 1x,
+    url("/images/value-garden-mobile.webp") 2x
+  );
   --hero-image: image-set(
     url("/images/jardin-mediterraneen-desktop-1280.webp?v=ciel-1") 1x,
     url("/images/jardin-mediterraneen-desktop.webp?v=ciel-1") 2x
@@ -105,6 +153,54 @@
   --color-contact-accent: #88e3b8;
   --shadow-card: 0 2px 6px #00071833, 0 8px 24px #0007184d;
   --shadow-soft: 0 18px 60px #00071866;
+  --achievements-image: image-set(
+    url("/images/realisation-lument-desktop-1280.webp") 1x,
+    url("/images/realisation-lument-desktop.webp") 2x
+  );
+  --achievements-image-tablet: image-set(
+    url("/images/realisation-lument-tablet-768.webp") 1x,
+    url("/images/realisation-lument-tablet.webp") 2x
+  );
+  --achievements-image-small: image-set(
+    url("/images/realisation-lument-mobile-480.webp") 1x,
+    url("/images/realisation-lument-mobile.webp") 2x
+  );
+  --expertise-image: image-set(
+    url("/images/expertise-lumen-desktop-1280.webp") 1x,
+    url("/images/expertise-lumen-desktop.webp") 2x
+  );
+  --expertise-image-tablet: image-set(
+    url("/images/expertise-lumen-tablet-768.webp") 1x,
+    url("/images/expertise-lumen-tablet.webp") 2x
+  );
+  --expertise-image-small: image-set(
+    url("/images/expertise-lumen-mobile-480.webp") 1x,
+    url("/images/expertise-lumen-mobile.webp") 2x
+  );
+  --method-image: image-set(
+    url("/images/methode-lument-desktop-1280.webp") 1x,
+    url("/images/methode-lument-desktop.webp") 2x
+  );
+  --method-image-tablet: image-set(
+    url("/images/methode-lument-tablet-768.webp") 1x,
+    url("/images/methode-lument-tablet.webp") 2x
+  );
+  --method-image-small: image-set(
+    url("/images/methode-lument-mobile-480.webp") 1x,
+    url("/images/methode-lument-mobile.webp") 2x
+  );
+  --value-image: image-set(
+    url("/images/value-lumen-desktop-1280.webp") 1x,
+    url("/images/value-lumen-desktop.webp") 2x
+  );
+  --value-image-tablet: image-set(
+    url("/images/value-lumen-tablet-768.webp") 1x,
+    url("/images/value-lumen-tablet.webp") 2x
+  );
+  --value-image-small: image-set(
+    url("/images/value-lumen-mobile-480.webp") 1x,
+    url("/images/value-lumen-mobile.webp") 2x
+  );
   --hero-image: image-set(
     url("/images/lumen-vivant-desktop-1280.webp?v=reseau-1") 1x,
     url("/images/lumen-vivant-desktop.webp?v=reseau-1") 2x
@@ -149,9 +245,17 @@
 @media (min-width: 1281px) {
   :root,
   [data-theme="garden"] {
+    --achievements-image: url("/images/realisation-garden-desktop.webp");
+    --expertise-image: url("/images/expertise-garden-desktop.webp");
+    --method-image: url("/images/methode-garden-desktop.webp");
+    --value-image: url("/images/value-garden-desktop.webp");
     --hero-image: url("/images/jardin-mediterraneen-desktop.webp?v=ciel-1");
   }
   [data-theme="lumen"] {
+    --achievements-image: url("/images/realisation-lument-desktop.webp");
+    --expertise-image: url("/images/expertise-lumen-desktop.webp");
+    --method-image: url("/images/methode-lument-desktop.webp");
+    --value-image: url("/images/value-lumen-desktop.webp");
     --hero-image: url("/images/lumen-vivant-desktop.webp?v=reseau-1");
   }
 }

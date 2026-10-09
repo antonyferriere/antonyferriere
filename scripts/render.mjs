@@ -20,7 +20,7 @@ const head = `<meta charset="utf-8"><meta name="viewport" content="width=device-
   <script>${themeInit}</script>
   ${renderMetadata()}
   <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/src/styles/tokens.css"><link rel="stylesheet" href="/src/styles/base.css"><link rel="stylesheet" href="/src/styles/navigation.css"><link rel="stylesheet" href="/src/styles/hero.css"><link rel="stylesheet" href="/src/styles/value-expertise.css"><link rel="stylesheet" href="/src/styles/achievements.css"><link rel="stylesheet" href="/src/styles/career-method.css"><link rel="stylesheet" href="/src/styles/about-contact.css">`;
+  <link rel="stylesheet" href="/src/styles/tokens.css"><link rel="stylesheet" href="/src/styles/base.css"><link rel="stylesheet" href="/src/styles/navigation.css"><link rel="stylesheet" href="/src/styles/section-landscape.css"><link rel="stylesheet" href="/src/styles/hero.css"><link rel="stylesheet" href="/src/styles/value-expertise.css"><link rel="stylesheet" href="/src/styles/achievements.css"><link rel="stylesheet" href="/src/styles/career-method.css"><link rel="stylesheet" href="/src/styles/about-contact.css">`;
 
 await writeFile(
   new URL("../index.html", import.meta.url),

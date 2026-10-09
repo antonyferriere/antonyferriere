@@ -1,3 +1,8 @@
+.three-u,
+.technical-culture {
+  background: var(--color-glass);
+}
+
 .value-intro {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -51,14 +56,17 @@
   line-height: 2;
 }
 
+.three-u,
+.technical-culture {
+  display: grid;
+  padding: 2.5rem;
+  border-radius: var(--radius-small);
+}
+
 .three-u {
   margin-top: 5rem;
-  display: grid;
   grid-template-columns: 0.85fr repeat(3, minmax(0, 1fr));
   gap: var(--space-md);
-  padding: 2.5rem;
-  background: var(--color-background-alt);
-  border-radius: var(--radius-small);
 }
 
 .three-u-intro {
@@ -113,9 +121,6 @@
   grid-template-columns: 1fr 2fr;
   gap: 4rem;
   margin-top: 4rem;
-  padding: 2.5rem;
-  background: var(--color-background-alt);
-  border-radius: var(--radius-small);
 }
 
 .technical-culture h3 {
@@ -156,7 +161,7 @@
 }
 
 @media (max-width: 1100px) {
-.three-u {
+  .three-u {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .three-u-intro {
@@ -168,7 +173,7 @@
 }
 
 @media (max-width: 800px) {
-.value-intro-copy > p:first-child br {
+  .value-intro-copy > p:first-child br {
     display: none;
   }
   .value-columns,

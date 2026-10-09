@@ -3,10 +3,11 @@ import { escapeHtml as e } from "../components/html.mjs";
 
 export function renderExpertise() {
   return /* HTML */ `<section
-    class="section"
+    class="section expertise-section landscape-section"
     id="expertise"
     aria-labelledby="expertise-title"
   >
+    <div class="section-landscape" aria-hidden="true"></div>
     <div class="container">
       <header class="section-heading">
         <p class="eyebrow">Expertise</p>
