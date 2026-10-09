@@ -136,21 +136,21 @@
   --color-surface: #09243a;
   --color-text: #e9f1f3;
   --color-text-muted: #adc4ce;
-  --color-primary: #88e3b8;
-  --color-secondary: #69baa9;
+  --color-primary: #33b9bd;
+  --color-secondary: #69b7ba;
   --color-accent: #62d2dc;
-  --color-link: #88e3b8;
+  --color-link: var(--color-primary);
   --color-on-primary: #000d23;
   --color-border: #29485b;
   --color-strong-border: #729ba9;
-  --color-glow: #88e3b8;
+  --color-glow: var(--color-primary);
   --color-warm: #d8c9a9;
   --color-header: #000d23f5;
   --color-glass: #000d23d9;
   --color-contact: #072c39;
   --color-contact-text: #e9f1f3;
   --color-contact-muted: #b4cfd2;
-  --color-contact-accent: #88e3b8;
+  --color-contact-accent: var(--color-primary);
   --shadow-card: 0 2px 6px #00071833, 0 8px 24px #0007184d;
   --shadow-soft: 0 18px 60px #00071866;
   --achievements-image: image-set(
@@ -234,7 +234,7 @@
   --hero-bottom: linear-gradient(0deg, #000d23 0%, #000d2333 38%, transparent 85%);
   --orb-background: radial-gradient(
     circle at 68% 30%,
-    #88e3b8,
+    var(--color-primary),
     #62d2dc 18%,
     #164d64 48%,
     #000d23 90%

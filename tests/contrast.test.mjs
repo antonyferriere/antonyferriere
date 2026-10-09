@@ -28,6 +28,9 @@ for (const theme of ["garden", "lumen"]) {
       m[2],
     ]),
   );
+  for (const [, name, reference] of block.matchAll(
+    /--([\w-]+):\s*var\(--([\w-]+)\);/g,
+  )) tokens[name] = tokens[reference];
   test(`${theme}: semantic text tokens meet AA contrast on their surfaces`, () => {
     for (const surface of [
       "color-background",
@@ -49,5 +52,9 @@ for (const theme of ["garden", "lumen"]) {
     );
     for (const text of ["color-contact-text", "color-contact-muted"])
       assert.ok(contrast(tokens[text], tokens["color-contact"]) >= 4.5);
+    if (tokens["color-contact-accent"])
+      assert.ok(
+        contrast(tokens["color-contact-accent"], tokens["color-contact"]) >= 4.5,
+      );
   });
 }
