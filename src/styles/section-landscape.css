@@ -42,3 +42,65 @@
     opacity: var(--landscape-opacity-small, 1);
   }
 }
+
+.section.landscape-section {
+  --landscape-background: var(--color-background);
+  --landscape-edge-top: var(--landscape-background);
+  --landscape-edge-bottom: var(--landscape-background);
+  --landscape-position: 70% center;
+  --landscape-veil: linear-gradient(
+    90deg,
+    var(--landscape-background) 0%,
+    color-mix(in srgb, var(--landscape-background) 94%, transparent) 25%,
+    color-mix(in srgb, var(--landscape-background) 40%, transparent) 55%,
+    transparent 80%
+  );
+  --landscape-veil-small: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--landscape-background) 96%, transparent),
+    color-mix(in srgb, var(--landscape-background) 82%, transparent) 60%,
+    color-mix(in srgb, var(--landscape-background) 55%, transparent)
+  );
+  --landscape-fade-inset: 0;
+  /* Fixed veils stay still while the landscape moves, with opaque section edges. */
+  --landscape-fade: linear-gradient(
+    180deg,
+    var(--landscape-edge-top) 0%,
+    transparent 18%,
+    transparent 75%,
+    var(--landscape-edge-bottom) 100%
+  );
+}
+
+.section.value-section {
+  --landscape-image: var(--value-image);
+  --landscape-image-tablet: var(--value-image-tablet);
+  --landscape-image-small: var(--value-image-small);
+  --landscape-edge-bottom: var(--color-background-alt);
+}
+
+.section.achievements-section {
+  --landscape-background: var(--color-background-alt);
+  --landscape-edge-bottom: var(--color-background);
+  --landscape-image: var(--achievements-image);
+  --landscape-image-tablet: var(--achievements-image-tablet);
+  --landscape-image-small: var(--achievements-image-small);
+}
+
+.section.expertise-section {
+  --landscape-edge-bottom: var(--color-background-alt);
+  --landscape-image: var(--expertise-image);
+  --landscape-image-tablet: var(--expertise-image-tablet);
+  --landscape-image-small: var(--expertise-image-small);
+}
+
+.section.method-section {
+  --landscape-edge-top: var(--color-background-alt);
+  --landscape-image: var(--method-image);
+  --landscape-image-tablet: var(--method-image-tablet);
+  --landscape-image-small: var(--method-image-small);
+}
+
+.section.landscape-section .card:not(.case-dialog) {
+  background: var(--color-glass);
+}

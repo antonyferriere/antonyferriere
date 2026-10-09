@@ -9,10 +9,11 @@ const steps = [
 ];
 export function renderMethod() {
   return /* HTML */ `<section
-    class="section method-section"
+    class="section method-section landscape-section"
     id="methode"
     aria-labelledby="method-title"
   >
+    <div class="section-landscape" aria-hidden="true"></div>
     <div class="container">
       <header class="section-heading">
         <p class="eyebrow">Méthode</p>
