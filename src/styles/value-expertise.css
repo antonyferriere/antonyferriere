@@ -88,6 +88,7 @@
 
 .three-u,
 .technical-culture {
+  display: grid;
   padding: 2.5rem;
   border-radius: var(--radius-small);
 }
