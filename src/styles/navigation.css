@@ -55,6 +55,16 @@
 .navigation-contact {
   font-weight: 600;
 }
+.main-navigation .navigation-cv {
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.55rem 1rem;
+  font-weight: 500;
+}
+.main-navigation .navigation-cv:hover {
+  color: var(--color-text);
+  text-decoration: none;
+}
 .theme-switch {
   display: flex;
   align-items: center;

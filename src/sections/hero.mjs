@@ -23,7 +23,7 @@ export function renderHero() {
         <div class="hero-actions">
           <a class="button button-primary" href="#approche"
             >Découvrir mon approche ${icon("down")}</a
-          ><a class="text-link cv-link" href="${profile.cv}" download
+          ><a class="button button-glass cv-link" href="${profile.cv}" download
             >Télécharger mon CV ${icon("download")}</a
           >
         </div>
