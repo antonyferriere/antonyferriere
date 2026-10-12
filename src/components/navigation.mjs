@@ -17,7 +17,7 @@ export function renderNavigation() {
           ${navigation
             .map(([id, label]) => `<a href="#${id}">${label}</a>`)
             .join("")}
-          <a class="navigation-cv" href="${profile.cv}" download
+          <a class="navigation-cv button-glass" href="${profile.cv}" download
             >CV ${icon("download")}</a
           >
           <a class="navigation-contact" href="#contact"
